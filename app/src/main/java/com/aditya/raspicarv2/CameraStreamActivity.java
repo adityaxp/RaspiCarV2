@@ -48,7 +48,7 @@ public class CameraStreamActivity extends AppCompatActivity {
 
         webView = (WebView) findViewById(R.id.cameraStreamWebView);
         takeSnapShotButton = (Button) findViewById(R.id.takeSnapshotButton);
-        cameraStreamIP = "http://192.168.137.2:8000/stream.mjpg";
+        cameraStreamIP = "http://IP_ADDRESS/stream.mjpg";
 
         if(!cameraStreamIP.equals("")){
             webView.setWebViewClient(new WebViewClient());
