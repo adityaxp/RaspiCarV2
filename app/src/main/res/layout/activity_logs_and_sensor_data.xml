@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogsAndSensorDataActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolBarLayout"
+        >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/logsToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/custom_gradient_1"
+        android:elevation="5dp"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:popupTheme="@style/MenuStyle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolBarTextView"
+            android:textSize="20sp"
+            android:text="Logs And Sensor Data"
+            android:layout_marginLeft="10dp"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+</RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logsEditText"
+        android:hint="> Waiting for incoming Logs and Sensor Data....."
+        android:layout_below="@+id/toolBarLayout"/>
+
+</RelativeLayout>

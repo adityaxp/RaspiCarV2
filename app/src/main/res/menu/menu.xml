@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Settings"
+        android:id="@+id/setting"/>
+
+    <item
+        android:title="About"
+        android:id="@+id/about"/>
+
+    <item
+        android:title="Terminate Code"
+        android:id="@+id/codeTerminate"/>
+
+</menu>

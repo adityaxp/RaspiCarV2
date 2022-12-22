@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_input">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:background="@drawable/custom_input"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivCustomSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/ic_command"/>
+
+        <TextView
+            android:id="@+id/tvCustomSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Select Command"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

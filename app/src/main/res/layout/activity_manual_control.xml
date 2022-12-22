@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManualControl">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolBarLayout">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/manualControlToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/custom_gradient_1"
+            android:elevation="5dp"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/MenuStyle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolBarTextView"
+                android:textSize="20sp"
+                android:text="Manual Control Over Internet"
+                android:layout_marginLeft="10dp"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manual Control"
+        android:id="@+id/menuTextView"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:background="#ededed"
+        android:textStyle="bold"
+        android:layout_below="@+id/toolBarLayout"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:id="@+id/line"
+        android:padding="10dp"
+        android:layout_below="@+id/menuTextView"
+        android:background="#000" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/layout"
+        android:layout_below="@id/line">
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/upwardButton"
+            android:text="Accelerate"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/ic_arrow_upward"
+            android:background="@drawable/custom_gradient_1" />
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/reverseButton"
+            android:text="Reverse"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_arrow_reverse"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:background="@drawable/custom_gradient_1"
+            android:layout_below="@+id/upwardButton" />
+
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upwardButton"
+            android:id="@+id/leftButton"
+            android:padding="10dp"
+            android:layout_toStartOf="@+id/reverseButton"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_arrow_left"
+            android:text="Left"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/custom_gradient_1"/>
+
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/upwardButton"
+            android:text="Right"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rightButton"
+            android:padding="10dp"
+            android:layout_toEndOf="@+id/reverseButton"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/custom_gradient_1"
+            android:layout_below="@+id/upwardButton"
+            android:drawableRight="@drawable/ic_arrow_right" />
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reverseButton"
+            android:layout_marginTop="10dp"
+            android:text="Stop"
+            android:layout_marginLeft="30dp"
+            android:layout_alignStart="@+id/leftButton"
+            android:id="@+id/stopButton"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/ic_stop"
+            android:background="@drawable/custom_gradient_1"
+            />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/honkButton"
+            android:background="@drawable/ic_bell"
+            />
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinButton"
+            android:layout_below="@+id/reverseButton"
+            android:layout_marginTop="10dp"
+            android:text="Spin"
+            android:layout_marginLeft="10dp"
+            android:layout_alignEnd="@+id/rightButton"
+            android:padding="10dp"
+            android:layout_marginRight="30dp"
+            android:drawableStart="@drawable/ic_spin"
+            android:background="@drawable/custom_gradient_1"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/servoAngleEditText"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="@drawable/custom_input"
+            android:layout_below="@id/stopButton"
+            android:layout_alignStart="@id/leftButton"
+            android:hint="Enter Angle (-20 to 50)"
+        />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Angle"
+            android:id="@+id/setAngleButton"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_angle"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:layout_alignEnd="@id/spinButton"
+            android:layout_below="@id/spinButton"
+            android:background="@drawable/custom_gradient_1"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forced Stop"
+            android:layout_below="@+id/setAngleButton"
+            android:layout_marginTop="10dp"
+            android:id="@+id/forceStopButton"
+            android:layout_alignEnd="@+id/spinButton"
+            android:layout_alignStart="@+id/stopButton"
+            android:padding="10dp"
+            android:background="@drawable/custom_gradient_1"
+            android:drawableStart="@drawable/ic_forced_stop"
+            android:drawableEnd="@drawable/ic_forced_stop"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Camera Stream"
+        android:id="@+id/cameraStreamTextView"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:background="#ededed"
+        android:textStyle="bold"
+        android:layout_below="@+id/layout"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:id="@+id/line2"
+        android:padding="10dp"
+        android:layout_below="@+id/cameraStreamTextView"
+        android:background="#000" />
+
+    <Switch
+        android:id="@+id/streamSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/line2"
+        android:text="Stream Switch: " />
+
+    <Switch
+        android:id="@+id/logsSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/line2"
+        android:layout_toRightOf="@+id/streamSwitch"
+        android:text="Logs Switch: " />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/streamLayout"
+        android:layout_below="@+id/streamSwitch">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/webStreamCardView"
+            android:visibility="invisible"
+            app:cardElevation="2dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            app:cardCornerRadius="4dp"
+            app:cardUseCompatPadding="true">
+
+            <WebView
+                android:layout_width="match_parent"
+                android:id="@+id/cameraStreamWebView"
+                android:visibility="invisible"
+                android:layout_height="200dp">
+            </WebView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="🔴 Live Stream 🔴"
+                android:padding="10dp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/logsLayout"
+        android:layout_below="@+id/streamSwitch">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/logsEditText"
+            android:visibility="invisible"
+            android:hint="> Waiting for incoming Logs and Sensor Data....." />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

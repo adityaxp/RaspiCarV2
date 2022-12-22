@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraStreamActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolBarLayout"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/streamToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/custom_gradient_1"
+            android:elevation="5dp"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/MenuStyle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolBarTextView"
+                android:textSize="20sp"
+                android:text="Camera Stream"
+                android:layout_marginLeft="10dp"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/webStreamCardView"
+        android:layout_below="@id/toolBarLayout"
+        app:cardElevation="2dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        app:cardCornerRadius="4dp"
+        app:cardUseCompatPadding="true">
+
+    <WebView
+        android:layout_width="match_parent"
+        android:id="@+id/cameraStreamWebView"
+        android:layout_height="200dp">
+    </WebView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="🔴 Live Stream 🔴"
+        android:padding="10dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        />
+    </androidx.cardview.widget.CardView>
+    
+    <Button
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/webStreamCardView"
+        android:layout_marginTop="10dp"
+        android:text="Take Snapshot"
+        android:padding="10dp"
+        android:id="@+id/takeSnapshotButton"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_gradient_1"
+        android:drawableLeft="@drawable/ic_camera"
+        android:drawableRight="@drawable/ic_camera"
+        />
+
+</RelativeLayout>

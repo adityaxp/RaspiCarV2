@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "437151051322",
+    "project_id": "raspicarv2",
+    "storage_bucket": "raspicarv2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:437151051322:android:25f94f982716f6516e8f03",
+        "android_client_info": {
+          "package_name": "com.aditya.raspicarv2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "437151051322-7qhf3h5606pg9ilkjgcp5kkr37mg7urf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQO5DPum34UnzyDqdvRSpLqgYcQTjJpVY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "437151051322-7qhf3h5606pg9ilkjgcp5kkr37mg7urf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
