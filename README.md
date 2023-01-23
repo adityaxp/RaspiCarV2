@@ -7,10 +7,6 @@
 
 https://user-images.githubusercontent.com/61054881/214046859-cccde819-3dbb-428d-9de2-b85499981c8c.mp4
 
-
-https://user-images.githubusercontent.com/61054881/214047434-c8299c4c-ecaa-4947-b7f2-d0ca8a55b6e4.mp4
-
-
 <hr>
 
 # Description
@@ -25,3 +21,7 @@ This project is still in the development phase. New features and functionalities
 
 # Android Application
 <img src="Images/image6.jpeg" width="180" height= "320"> <img src="Images/image7.jpeg" width="180" height= "320"> <img src="Images/image5.jpeg" width="180" height= "320"> <img src="Images/image9.jpeg" width="180" height= "320">
+
+https://user-images.githubusercontent.com/61054881/214047434-c8299c4c-ecaa-4947-b7f2-d0ca8a55b6e4.mp4
+
+<hr>
