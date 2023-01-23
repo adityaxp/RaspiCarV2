@@ -10,6 +10,7 @@ RaspiCarV2 is a prototype of an IoT-based surveillance car implemented using Ras
 This project is still in the development phase. New features and functionalities will be introduced soon...
 <hr>
 
+# PYQT Desktop client
 
 
 
