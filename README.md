@@ -3,9 +3,11 @@
 <img src="Images/IMG-0032.jpg" width="200" height= "150"> <img src="Images/image2.jpeg" width="200"> 
 <img src="Images/image3.jpg" width="200"> <img src="Images/image4.jpg" width="200">
 <hr>
+
 <video controls>  
 <source src="Android3.mp4" type="video/mp4">  
 </video>  
+
 # Description
 
 RaspiCarV2 is a prototype of an IoT-based surveillance car implemented using Rasberry Pi 3B+ and Firebase for better control over the cloud.
