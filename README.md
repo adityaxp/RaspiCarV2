@@ -15,4 +15,4 @@ This project is still in the development phase. New features and functionalities
 <hr>
 
 # Android Application
-<img src="Images/image6.jpeg" width="150" height= "300"> <img src="Images/image7.jpeg" width="200" height= "300"> <img src="Images/image5.jpeg" width="200" height= "300"> <img src="Images/image9.jpeg" width="200" height= "300">
+<img src="Images/image6.jpeg" width="180" height= "320"> <img src="Images/image7.jpeg" width="200" height= "300"> <img src="Images/image5.jpeg" width="200" height= "300"> <img src="Images/image9.jpeg" width="200" height= "300">
