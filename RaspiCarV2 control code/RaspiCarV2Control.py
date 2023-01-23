@@ -383,14 +383,3 @@ while invalidChoiceCount < 3:
 
 	
 
-    
-#c.send(bytes('Motor Driver 1> GPIO 12 & GPIO 13: HIGH \nMotor Driver 2> GPIO 33 & GPIO 35: HIGH', 'utf-8'))
-#c.send(bytes('Motor Driver 1> GPIO 11 & GPIO 15: HIGH \nMotor Driver 2> GPIO 36 & GPIO 37: HIGH', 'utf-8'))
-#c.send(bytes('Motor Driver 1> GPIO 13 & GPIO 15: HIGH \nMotor Driver 2> GPIO 35 & GPIO 36: HIGH', 'utf-8'))
-#c.send(bytes('Motor Driver 1> GPIO 11 & GPIO 12: HIGH \nMotor Driver 2> GPIO 33 & GPIO 37: HIGH', 'utf-8'))
-#c.send(bytes('Motor Driver 1 & Motor Driver 2> ALL GPIO : LOW', 'utf-8'))
-    
-    
-
-
-
