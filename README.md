@@ -11,7 +11,8 @@ This project is still in the development phase. New features and functionalities
 <hr>
 
 # PYQT Desktop client
-<img src="Images/image5.png">
+<img src="Images/image5.png" width="640" height= "480">
 <hr>
 
 # Android Application
+<img src="Images/image6.jpeg" width="300" height= "300"> <img src="Images/image7.jpeg" width="300" height= "300"> <img src="Images/image5.jpeg" width="300" height= "300">
