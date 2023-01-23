@@ -11,7 +11,7 @@ This project is still in the development phase. New features and functionalities
 <hr>
 
 # PYQT Desktop client
-<img src="Images/image5.jpg">
+<img src="Images/image5.jpeg">
 <hr>
 
 # Android Application
