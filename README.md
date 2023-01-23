@@ -4,7 +4,9 @@
 <img src="Images/image3.jpg" width="200"> <img src="Images/image4.jpg" width="200">
 
 <hr>
-![video](https://user-images.githubusercontent.com/61054881/214046859-cccde819-3dbb-428d-9de2-b85499981c8c.mp4)
+
+https://user-images.githubusercontent.com/61054881/214046859-cccde819-3dbb-428d-9de2-b85499981c8c.mp4
+
 <hr>
 
 # Description
