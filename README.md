@@ -10,7 +10,7 @@ https://user-images.githubusercontent.com/61054881/214046859-cccde819-3dbb-428d-
 <hr>
 
 # Description
-The RaspiCarV2, powered by Raspberry Pi 3B+ and integrated with Firebase for cloud-based control, is a surveillance car prototype in the realm of IoT. Currently in the developmental stage, this project will soon unveil additional features and functionalities.
+The RaspiCarV2, powered by Raspberry Pi 3B+ and integrated with Firebase for cloud-based remote control, is a surveillance car prototype in the realm of IoT. Currently in the developmental stage, this project will soon unveil additional features and functionalities.
 <hr>
 
 # PYQT Desktop client
